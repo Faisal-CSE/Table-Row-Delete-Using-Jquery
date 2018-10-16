@@ -1,0 +1,23 @@
+
+<script src="jquery-3.1.1.min.js"></script>
+
+<body>
+    <input type="radio" name="bedStatus" id="allot" checked="checked" value="allot">Yes
+    <input type="radio" name="bedStatus" id="transfer" value="transfer">No
+
+
+
+    <p id="res"></p>
+</body>
+
+<script>
+$('input[type=radio][name=bedStatus]').change(function() {
+    if (this.value == 'allot') {
+        var code = 1245;
+        document.getElementById("res").innerHTML = code;
+    }
+    else if (this.value == 'transfer') {
+        document.getElementById("res").innerHTML = 0;
+    }
+});
+</script>

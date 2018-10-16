@@ -1,0 +1,41 @@
+
+    <table border="1" cellspacing="0">
+      <tr>
+        <th>S. No</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Action</th>
+      </tr>
+
+      <tr id="Fp">
+        <td>1</td>
+        <td>Faisal </td>
+        <td>Porag</td>
+        <td><input type="button" value="Delete" onclick="test('Fp')"></td>
+      </tr>
+      <tr id="ta">
+        <td>2</td>
+        <td>Tanvir</td>
+        <td>Ahmed</td>
+        <td><input type="button" value="Delete" onclick="test('ta')"></td>
+      </tr>
+      <tr id="wa">
+        <td>3</td>
+        <td>Wasim</td>
+        <td>Akram</td>
+        <td><input type="button" value="Delete" onclick="test('wa')"></td>
+      </tr>
+
+    </table>
+
+
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+  $(document).ready(function(){
+    
+});
+
+function test(id){
+    $('#'+id).hide();
+}
+</script>
