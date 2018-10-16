@@ -2,37 +2,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <table border="1" cellspacing="0">
-      <tr>
-        <th>S. No</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Action</th>
-      </tr>
-
-      <tr id="Fp">
-        <td>1</td>
-        <td>Faisal </td>
-        <td>Porag</td>
-        <td><input type="button" value="Delete" onclick="test('Fp')"></td>
-      </tr>
-      <tr id="ta">
-        <td>2</td>
-        <td>Tanvir</td>
-        <td>Ahmed</td>
-        <td><input type="button" value="Delete" onclick="test('ta')"></td>
-      </tr>
-      <tr id="wa">
-        <td>3</td>
-        <td>Wasim</td>
-        <td>Akram</td>
-        <td><input type="button" value="Delete" onclick="test('wa')"></td>
-      </tr>
-
-    </table>
-
-
-
+    
     <h3>Form</h3>
     <form action='' id='theform' >
     <div class='row'>
@@ -63,8 +33,4 @@
     $('#theform').submit();
   });
 });
-
-function test(id){
-    $('#'+id).hide();
-}
 </script>
