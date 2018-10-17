@@ -1,0 +1,13 @@
+$.ajax({
+    url: uri,
+    cache: false,
+    beforeSend: function(){
+        $('#image').show();
+    },
+    complete: function(){
+        $('#image').hide();
+    },
+    success: function(html){
+       $('.info').append(html);
+    }
+});
